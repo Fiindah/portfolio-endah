@@ -22,19 +22,31 @@
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white dark:bg-dark dark:shadow-slate-500 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:dark:bg-transparent lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About Me</a>
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About Me</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                            </li>
+                            <li class="flex items-center pl-8 mt-3 lg:mt-0">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500">light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                                    <label for="dark-toggle">
+                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -44,13 +56,12 @@
     </header>
     <!-- Header End -->
 
-
     <!-- Hero Section Start #1e3a8a -->
-     <section id="home" class="pt-36">
+     <section id="home" class="pt-36 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Assalamu'alaikum semua 👋, saya <span class="block font-bold text-dark text-4xl mt-1">Endah FN</span></h1>
+                    <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Assalamu'alaikum semua 👋, saya <span class="block font-bold text-dark text-4xl mt-1 dark:text-white">Endah FN</span></h1>
                     <h2 class="font-medium text-secondary text-lg mb-5">Front End Develover</h2>
                     <p class="font-medium text-secondary mb-10 leading-relaxed">Keep Fighting! Semoga harimu menyenangkan.</p>
                     <a href="#portfolio" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-2xl hover:shadow-lg hover:bg-indigo-400 transition duration-300 ease-in-out">See my project</a>
@@ -58,8 +69,8 @@
 
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-9 lg:right-0">
-                        <img src="./images/hero.png" alt="Gambar wanita berhijab" class="max-w-full mx-auto">
-                        <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                        <img src="./images/hero.png" alt="Gambar wanita berhijab" class="relative z-10 max-w-full mx-auto">
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
                             <svg width="400" height="380" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#6366f1" d="M36.4,-28.4C52.4,-20.4,74.1,-10.2,79.6,5.5C85.1,21.2,74.3,42.4,58.3,48.1C42.4,53.8,21.2,44.1,0.4,43.7C-20.3,43.2,-40.6,52,-56.9,46.3C-73.3,40.6,-85.7,20.3,-84.7,1C-83.7,-18.2,-69.2,-36.5,-52.8,-44.4C-36.5,-52.4,-18.2,-50,-4,-46C10.2,-42,20.4,-36.3,36.4,-28.4Z" transform="translate(100 100) scale(1.2)" />
                               </svg>
@@ -72,16 +83,16 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap ">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-3 max-w-md lg:text-4xl">Yuk, belajar web programming.</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-3 max-w-md lg:text-4xl dark:text-white">Yuk, belajar web programming.</h2>
                     <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Tidak ada kata terlambat untuk belajar dan berbenah menjadi lebih baik. Semoga Allah mudahkan kita dalam kebaikan</p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
-                    <h4 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h4>
+                    <h4 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Mari berteman</h4>
                     <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Belajar hal baru itu tidak mudah. Kita butuh teman dan lingkungan yang mendukung. Mari berteman untuk saling membersamai dalam kebaikan.</p>
                     <div class="flex items-center">
                         <!-- Youtube -->
@@ -142,12 +153,12 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-     <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+     <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4">Project Terbaru</h2>
+                    <h2 class="font-bold text-dark dark:text-white text-3xl sm:text-4xl lg:text-5xl mb-4">Project Terbaru</h2>
                     <p class="font-medium text-md text-secondary">Saya tertarik menjadi Frontend Web Develover. Seorang pemula yang terus belajar membuat website yang responsif dan ramah pengguna menggunakan teknologi seperti: HTML, CSS, Javascript, ReactJS dan Tailwind CSS. Saya bersemangat untuk mempelajari hal baru di bidang IT dan mengaplikasikannya pada project saja.</p>
                 </div>
             </div>
@@ -157,28 +168,28 @@
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="./images/bookshelf-apps.png" alt="Bookshelf Apps" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Bookshelf Apps</h3>
+                    <h3 class="font-semibold text-xl text-primary dark:text-white mt-5 mb-3">Bookshelf Apps</h3>
                     <p class="font-medium text-base text-secondary">Aplikasi perpustakan pribadi. Aplikasi yang dapat memasukkan data buku ke dalam rak buku, memindahkan data buku ke rak baca dan selesai dibaca.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="./images/foodies-app.png" alt="Foodies Bar" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Foodies Bar</h3>
+                    <h3 class="font-semibold text-xl text-primary dark:text-white mt-5 mb-3">Foodies Bar</h3>
                     <p class="font-medium text-base text-secondary">Aplikasi katalog restoran. Ketika diklik dapat menampilkan detail restoran.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="./images/resep-foodies.jpeg" alt="Resep Foodies Bar" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Aplikasi Pencarian Resep Makanan</h3>
+                    <h3 class="font-semibold text-xl text-primary dark:text-white mt-5 mb-3">Aplikasi Pencarian Resep Makanan</h3>
                     <p class="font-medium text-base text-secondary">Aplikasi sederhana dimana kita dapat melakukan pencarian resep makanan seperti: cake, sandwichis, dll.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="./images/my-notes.png" alt="My Notes" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl text-primary mt-5 mb-3">My Notes</h3>
+                    <h3 class="font-semibold text-xl text-primary dark:text-white mt-5 mb-3">My Notes</h3>
                     <p class="font-medium text-base text-secondary">Aplikasi sederhana menggunakan ReactJS. Aplikasi yang dapat membuat catatan dan menghapus catatan/notes.</p>
                 </div>
                 
@@ -286,6 +297,12 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+
+    <!-- Back to Top Start -->
+     <a href="#home" class="fixed z-[9999] bottom-4 right-4 hidden items-center justify-center h-14 w-14 bg-primary rounded-full p-4 hover:animate-pulse" id="to-top">
+        <span class="block h-5 w-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+     </a>
+    <!-- Back to Top End -->
 
     <script src="./js/script.js"></script>
 </body>
